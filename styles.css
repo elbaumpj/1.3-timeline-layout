@@ -1,0 +1,55 @@
+/* Column code taken from Learn CSS Layout; changed column numbers */
+body {
+  font-family: "Helvetica", sans-serif;
+  margin: 0;
+}
+*{
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+.timestamp {
+  display: inline-block;
+  position: absolute;
+  margin-right: 500px;
+  margin-top: 65px;
+  margin-left: 150px;
+  width: 155px;
+  border: 1px solid green;
+  /*border-right: thick solid #AFDCF8*/
+}
+.recipe {
+  position: relative;
+  margin-left: 400px;
+  margin-right: 200px;
+  margin-top: 0px;
+  align-self: center;
+}
+h3 {
+  border-bottom: 1px solid white;
+}
+div {
+  margin: 10px;
+  padding: 20px;
+}
+p {
+  font-family: "Latin";
+}
+#beans {
+  background-color: #6CBFEE;
+  color: white;
+}
+#radishes {
+  background-color: #6CBFEE;
+  color: white;
+  float: both;
+}
+#bean-time {
+  border: 1px solid red;
+  padding-bottom: 50px;
+}
+#radish-time {
+  border: 1px solid orange;
+  padding-top: 225px;
+}
