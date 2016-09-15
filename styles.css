@@ -11,30 +11,35 @@ img {
 }
 .timestamp {
   display: inline-block;
+  height: 500px;
+  width: 155px;
   position: absolute;
   margin-right: 500px;
-  margin-top: 65px;
-  margin-left: 150px;
-  width: 155px;
-  border: 1px solid green;
-  /*border-right: thick solid #AFDCF8*/
+  margin-top: 50px;
+  margin-left: 200px;
 }
 .recipe {
   position: relative;
-  margin-left: 400px;
+  margin-left: 300px;
   margin-right: 200px;
   margin-top: 0px;
   align-self: center;
 }
 h3 {
   border-bottom: 1px solid white;
+  padding-bottom: 10px;
 }
 div {
   margin: 10px;
   padding: 20px;
 }
 p {
-  font-family: "Latin";
+  font-family: "Open Sans";
+}
+img {
+  padding-left: 10px;
+  width: 40px;
+  height: 30px;
 }
 #beans {
   background-color: #6CBFEE;
@@ -46,10 +51,81 @@ p {
   float: both;
 }
 #bean-time {
-  border: 1px solid red;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
+  padding-left: 5px;
 }
 #radish-time {
-  border: 1px solid orange;
-  padding-top: 225px;
+  padding-top: 150px;
+  padding-left: 5px;
+}
+.opaque {
+  opacity: 0.5;
+  width: 20px;
+  font-size: 7px;
+  padding-left: 26px;
+}
+.fa {
+  height: 30px;
+  width: 30px;
+  color: white;
+  text-align: -webkit-center;
+  position: relative;
+  left: 0px;
+  bottom: 25px;
+  padding: 0px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  border-radius: 200px;
+  border: 6px solid #AFDCF8;
+  background-color: #46A4DA;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  height: 120%;
+  width: 5px;
+  left: 322px;
+  background-color: #B0DBF6
+}
+#beans {
+  transition: background-color .5s ease;
+}
+#beans:hover {
+  background-color: #3594CB;
+}
+#radishes {
+  transition: background-color .5s ease;
+}
+#radishes:hover {
+  background-color: #3594CB;
+}
+.big-blue {
+  font-size: 20px;
+  color: #3594CB;
+}
+
+/* used CSS Tricks for triangle help https://css-tricks.com/snippets/css/css-triangle/ */
+#beans::before {
+  content: "";
+  width: 0;
+  height: 0;
+  left: 25px;
+  bottom: 521px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right:10px solid #6CBFEE;
+  position: absolute;
+}
+
+#radishes::before {
+  content: "";
+  width: 0;
+  height: 0;
+  left: 23px;
+  bottom: 242px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right:10px solid #6CBFEE;
+  position: absolute;
 }
